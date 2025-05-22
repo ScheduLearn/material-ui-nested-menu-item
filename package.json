@@ -1,81 +1,41 @@
 {
-  "name": "material-ui-nested-menu-item",
-  "version": "1.0.2",
-  "description": "Infinite nested material menus",
+  "name": "mui-nested-menu-item",
+  "version": "2.0.0",
+  "description": "A nested menu item component built with Material UI v5+",
   "repository": {
     "type": "git",
-    "url": "https://github.com/azmenak/material-ui-nested-menu-item"
-  },
-  "scripts": {
-    "test": "echo \"No units tests.\"",
-    "build": "pika build",
-    "publish": "pika publish",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "version": "npm run build"
+    "url": "https://github.com/your-org/mui-nested-menu-item"
   },
   "keywords": [
     "react",
-    "hook",
-    "hooks",
     "typescript",
-    "esm",
-    "pika",
     "material-ui",
-    "nested menu item"
+    "mui",
+    "nested menu",
+    "menu item",
+    "ui component"
   ],
-  "author": "Adam Zmenak <adam.zmenak@gmail.com>",
+  "author": "Your Name <your.email@example.com>",
   "license": "MIT",
-  "devDependencies": {
-    "@babel/core": "^7.8.3",
-    "@material-ui/core": "^4.9.0",
-    "@material-ui/icons": "^4.5.1",
-    "@pika/pack": "^0.5.0",
-    "@pika/plugin-build-node": "^0.8.1",
-    "@pika/plugin-build-web": "^0.8.1",
-    "@pika/plugin-ts-standard-pkg": "^0.8.1",
-    "@pika/types": "^0.8.1",
-    "@storybook/addon-actions": "^5.3.9",
-    "@storybook/addon-links": "^5.3.9",
-    "@storybook/addons": "^5.3.9",
-    "@storybook/react": "^5.3.9",
-    "@testing-library/react": "^9.4.0",
-    "@testing-library/react-hooks": "^3.2.1",
-    "@types/jest": "^24.0.25",
-    "@types/react": "^16.9.17",
-    "babel-loader": "^8.0.6",
-    "clsx": "^1.0.4",
-    "jest": "^24.9.0",
-    "react": "^18.2.0",
-    "react-dom": "^16.12.0",
-    "react-test-renderer": "^16.12.0",
-    "ts-jest": "^24.3.0",
-    "ts-loader": "^6.2.1",
-    "typescript": "^5.0.4"
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.tsx --format cjs,esm --dts",
+    "clean": "rm -rf dist"
   },
   "peerDependencies": {
-    "@material-ui/core": "^4.9.0",
-    "@material-ui/icons": "^4.5.1",
-    "clsx": "^1.0.4",
-    "react": ">=16.9.0"
+    "react": ">=17.0.0",
+    "react-dom": ">=17.0.0",
+    "@mui/material": "^5.0.0",
+    "@mui/icons-material": "^5.0.0"
   },
-  "@pika/pack": {
-    "pipeline": [
-      [
-        "@pika/plugin-ts-standard-pkg",
-        {
-          "exclude": [
-            "*.spec.*",
-            "stories/**/*"
-          ]
-        }
-      ],
-      [
-        "@pika/plugin-build-web"
-      ]
-    ]
-  },
-  "dependencies": {
-    "ts-node": "^10.9.1"
+  "devDependencies": {
+    "@mui/material": "^5.15.15",
+    "@mui/icons-material": "^5.15.15",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.4.3",
+    "tsup": "^8.0.0"
   }
 }
