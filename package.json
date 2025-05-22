@@ -1,10 +1,10 @@
 {
   "name": "mui-nested-menu-item",
   "version": "2.0.0",
-  "description": "A nested menu item component built with Material UI v5+",
+  "description": "A nested menu item component built with Material UI v6+",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-org/mui-nested-menu-item"
+    "url": "https://github.com/ScheduLearn/mui-nested-menu-item"
   },
   "keywords": [
     "react",
